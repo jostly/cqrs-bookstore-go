@@ -6,21 +6,21 @@ import (
 )
 
 type inMemoryRepository struct {
-	productMap map[string]domain.Product
+	productMap map[domain.ProductId]domain.Product
 }
 
 func NewInMemoryRepository() *inMemoryRepository {
 	r := new(inMemoryRepository)
-	r.productMap = make(map[string]domain.Product)
+	r.productMap = make(map[domain.ProductId]domain.Product)
 	return r
 }
 
-func (r *inMemoryRepository) GetProduct(productId string) (product domain.Product, err error) {
+func (r *inMemoryRepository) GetProduct(productId domain.ProductId) (product domain.Product, err error) {
 	var ok bool
 
 	product, ok = r.productMap[productId]
 	if !ok {
-		err = errors.New("No product with id '" + productId + "' exists")
+		err = errors.New("No product with id '" + string(productId) + "' exists")
 	}
 	return
 }
@@ -34,6 +34,7 @@ func (r *inMemoryRepository) GetProducts() []domain.Product {
 	for _, value := range r.productMap {
 		v = append(v, value)
 	}
+	// TODO this should be sorted according to book title, but that was complex :)
 
 	return v
 }
