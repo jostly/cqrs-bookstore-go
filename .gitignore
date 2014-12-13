@@ -22,3 +22,8 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+gin-bin
+
+# Godeps
+_workspace

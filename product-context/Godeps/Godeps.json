@@ -1,0 +1,40 @@
+{
+	"ImportPath": "github.com/jostly/cqrs-bookstore-go/product-context",
+	"GoVersion": "go1.4",
+	"Packages": [
+		"github.com/jostly/cqrs-bookstore-go/..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/negroni",
+			"Comment": "v0.1-51-g2b6e86b",
+			"Rev": "2b6e86bff68451fcd38bd9e2da90e0b70e85983d"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "1be7a086a5fd6440ef16fe96baeda0c78282b980"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "9ede152210fa25c1377d33e867cb828c19316445"
+		},
+		{
+			"ImportPath": "github.com/hariharan-uno/cors",
+			"Rev": "0c2aae375a74580f8f2dc7252a6fa370eb93fcbc"
+		},
+		{
+			"ImportPath": "github.com/onsi/ginkgo",
+			"Comment": "v1.1.0-32-g291f28e",
+			"Rev": "291f28e66dd277f35d3635990a7448759645c7e7"
+		},
+		{
+			"ImportPath": "github.com/onsi/gomega",
+			"Comment": "v1.0-26-gdc751ce",
+			"Rev": "dc751ce5f266d83c26fae5c0a9093973b29cb61d"
+		},
+		{
+			"ImportPath": "gopkg.in/unrolled/render.v1",
+			"Rev": "4796b5bc747483bf9b20a50b2c80e00ed2c85fab"
+		}
+	]
+}
